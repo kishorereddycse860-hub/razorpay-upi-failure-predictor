@@ -69,6 +69,37 @@ streamlit run app.py
 
 Python, Pandas, Scikit-learn, Streamlit, Joblib
 
+## Architecture
+
+```
+Raw UPI Transaction Dataset (CSV)
+            │
+            ▼
+Feature Engineering
+  - Extract hour, day of week from timestamp
+  - Extract bank from UPI ID
+  - same_bank flag
+            │
+            ▼
+Encoding + Train/Test Split
+  - One-hot encode bank features
+  - 80/20 stratified split
+            │
+            ▼
+Model Training
+  - Logistic Regression (baseline)
+  - Random Forest
+            │
+            ▼
+Evaluation
+  - Precision, Recall, F1, Confusion Matrix
+            │
+            ▼
+Streamlit Demo App
+  - User inputs transaction details
+  - Live SUCCESS/FAILED prediction
+```
+
 ## Author
 
 Kishore Reddy Gayam — B.Tech CSE (AI/ML), Marwadi University
