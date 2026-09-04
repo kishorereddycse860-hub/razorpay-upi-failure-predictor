@@ -111,6 +111,10 @@ Streamlit Demo App
   - Live SUCCESS/FAILED prediction with confidence score
 ```
 
+## Demo Video
+
+Watch the full walkthrough: [Loom Video](https://www.loom.com/share/04b9d6c0571548bd9e9274c38c26f070)
+
 ## Author
 
 Kishore Reddy Gayam — B.Tech CSE (AI/ML), Marwadi University
