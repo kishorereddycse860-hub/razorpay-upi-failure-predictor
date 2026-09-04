@@ -79,37 +79,37 @@ streamlit run app.py
 Python, Pandas, Scikit-learn, XGBoost, Streamlit, Joblib
 
 ## Architecture
-
+```text
 Raw UPI Transaction Dataset (CSV)
-│
-▼
+            │
+            ▼
 Feature Engineering
-
-Extract hour, day of week from timestamp
-Extract bank from UPI ID
-same_bank flag
-│
-▼
+  - Extract hour, day of week from timestamp
+  - Extract bank from UPI ID
+  - same_bank flag
+            │
+            ▼
 Encoding + Train/Test Split
-One-hot encode bank features
-80/20 stratified split
-│
-▼
+  - One-hot encode bank features
+  - 80/20 stratified split
+            │
+            ▼
 Model Training
-Logistic Regression (baseline)
-Random Forest
-XGBoost
-Hyperparameter tuning (GridSearchCV, 5-fold CV)
-│
-▼
+  - Logistic Regression (baseline)
+  - Random Forest
+  - XGBoost
+  - Hyperparameter tuning (GridSearchCV, 5-fold CV)
+            │
+            ▼
 Evaluation
-Accuracy, Precision, Recall, F1, Confusion Matrix
-Edge case testing (unseen bank scenario)
-│
-▼
+  - Accuracy, Precision, Recall, F1, Confusion Matrix
+  - Edge case testing (unseen bank scenario)
+            │
+            ▼
 Streamlit Demo App
-User inputs transaction details
-Live SUCCESS/FAILED prediction with confidence score
+  - User inputs transaction details
+  - Live SUCCESS/FAILED prediction with confidence score
+```
 
 ## Author
 
